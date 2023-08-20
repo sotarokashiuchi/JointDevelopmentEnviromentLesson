@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <assert.h>
 #include <stdlib.h>
+#include <time.h>
 
 int daily_fortune(void);
 int horoscopes(void);
@@ -44,6 +45,26 @@ int main(void){
 
 	return 0;
 }
+
+int result(const unsigned int key){
+	int percent[10];
+	srand(key);
+	int i;
+
+	for(i=0; i<10; i++){
+		percent[i] = rand() % 100;
+	}
+
+	printf("運勢:\t%3d%%\n", percent[0]);
+	printf("恋愛:\t%3d%%\n", percent[1]);
+	printf("願望:\t%3d%%\n", percent[2]);
+	printf("商売:\t%3d%%\n", percent[3]);
+	printf("失物:\t%3d%%\n", percent[4]);
+	printf("住居:\t%3d%%\n", percent[5]);
+
+	return 0;
+}
+
 
 int daily_fortune(void){
 	return 0;
