@@ -6,6 +6,7 @@
 
 int daily_fortune(void);
 int horoscopes(void);
+int blood_fortune(void);
 
 int main(void){
 	int menu_id;
@@ -21,7 +22,7 @@ int main(void){
 		for( ; ; ){
 			printf("メニューを数値で選択してください>>>");
 			scanf("%d", &menu_id);
-			if(0 <= menu_id && menu_id <= 2){
+			if(0 <= menu_id && menu_id <= 3){
 				break;
 			} else {
 				printf("%d という数値のメニューは存在しません\n", menu_id);
@@ -38,6 +39,9 @@ int main(void){
 				break;
 			case 2:
 				horoscopes();
+				break;
+			case 3:
+				blood_fortune();
 				break;
 			default:
 				fprintf(stderr, "menu_idが不正です\n");
@@ -110,5 +114,34 @@ int horoscopes(void){
 			time_t times = time(NULL);
 			struct tm *timeinfo = gmtime(&times);
 			result((unsigned int)(timeinfo->tm_year+timeinfo->tm_mon+timeinfo->tm_mday+sign));
+	return 0;
+}
+
+int blood_fortune(void){
+	int blood;
+		printf("\n\n血液型一覧\n");
+		printf(" 0:占い終了\n");
+		printf(" 1:A\n");
+		printf(" 2:B\n");
+		printf(" 3:AB\n");
+		printf(" 4:O\n");
+		
+		for( ; ; ){
+			printf("血液型を数値で選択してください>>>");
+			scanf("%d", &blood);
+			if(0 == blood){
+				return 0;
+			} else if(1 <= blood && blood <= 4){
+				break;
+			} else {
+				printf("%d という数値の血液型は存在しません\n", blood);
+				printf("再度入力してください\n");
+			}
+		}
+		
+		time_t times = time(NULL);
+		struct tm *timeinfo = gmtime(&times);
+		result((unsigned int)(timeinfo->tm_year+timeinfo->tm_mon+blood));
+
 	return 0;
 }
