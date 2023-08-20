@@ -2,6 +2,7 @@
 #include <assert.h>
 #include <stdlib.h>
 #include <time.h>
+#include <unistd.h>
 
 int daily_fortune(void);
 int horoscopes(void);
@@ -11,10 +12,11 @@ int main(void){
 	for( ; ; ){
 		/* メニュー選択 */
 		// メニュー表示
-		printf("メニュー 一覧\n");
-		printf(" 0占い終了\n");
-		printf(" 1今日の運勢を占う\n");
-		printf(" 2星座占い\n");
+		printf("\n\nメニュー 一覧\n");
+		printf(" 0:占い終了\n");
+		printf(" 1:今日の運勢を占う\n");
+		printf(" 2:星座占い\n");
+		printf(" 3:血液型占い\n");
 		
 		for( ; ; ){
 			printf("メニューを数値で選択してください>>>");
@@ -55,6 +57,7 @@ int result(const unsigned int key){
 		percent[i] = rand() % 100;
 	}
 
+	sleep(1);
 	printf("運勢:\t%3d%%\n", percent[0]);
 	printf("恋愛:\t%3d%%\n", percent[1]);
 	printf("願望:\t%3d%%\n", percent[2]);
@@ -77,24 +80,26 @@ int horoscopes(void){
 	int sign;
 			// メニュー表示
 			printf("星座 一覧\n");
-			printf(" 0星座占い終了\n");
-			printf(" 1おひつじ座\n");
-			printf(" 2おうし座\n");
-			printf(" 3ふたご座\n");
-			printf(" 4かに座\n");
-			printf(" 5しし座\n");
-			printf(" 6おとめ座\n");
-			printf(" 7てんびん座\n");
-			printf(" 8さそり座\n");
-			printf(" 9いて座\n");
-			printf(" 10やぎ座\n");
-			printf(" 11みずがめ座\n");
-			printf(" 12うお座\n");
+			printf("  0:星座占い終了\n");
+			printf("  1:おひつじ座\n");
+			printf("  2:おうし座\n");
+			printf("  3:ふたご座\n");
+			printf("  4:かに座\n");
+			printf("  5:しし座\n");
+			printf("  6:おとめ座\n");
+			printf("  7:てんびん座\n");
+			printf("  8:さそり座\n");
+			printf("  9:いて座\n");
+			printf(" 10:やぎ座\n");
+			printf(" 11:みずがめ座\n");
+			printf(" 12:うお座\n");
 			
 			for( ; ; ){
 				printf("星座を数値で選択してください>>>");
 				scanf("%d", &sign);
-				if(0 <= sign && sign <= 12){
+				if(0 == sign){
+					return 0;
+				} else if(1 <= sign && sign <= 12){
 					break;
 				} else {
 					printf("%d という数値の星座は存在しません\n", sign);
