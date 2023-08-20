@@ -76,7 +76,6 @@ int result(const unsigned int key){
 int daily_fortune(void){
 	printf("今日のあなたの運勢は…\n");
 	result((unsigned int)time(NULL));
-
 	return 0;
 }
 
