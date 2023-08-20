@@ -1,4 +1,9 @@
 #include <stdio.h>
+#include <assert.h>
+#include <stdlib.h>
+
+int daily_fortune(void);
+int horoscopes(void);
 
 int main(void){
 	int menu_id;
@@ -22,8 +27,28 @@ int main(void){
 		}
 
 		/* 占い呼び出し*/
-
+		switch(menu_id){
+			case 0:
+				return 0;
+			case 1:
+				daily_fortune();
+				break;
+			case 2:
+				horoscopes();
+				break;
+			default:
+				fprintf(stderr, "menu_idが不正です\n");
+				exit(1);
+		}
 	}
 
+	return 0;
+}
+
+int daily_fortune(void){
+	return 0;
+}
+
+int horoscopes(void){
 	return 0;
 }
