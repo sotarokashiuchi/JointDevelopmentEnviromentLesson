@@ -71,5 +71,36 @@ int daily_fortune(void){
 }
 
 int horoscopes(void){
+	int sign;
+			// メニュー表示
+			printf("星座 一覧\n");
+			printf(" 0星座占い終了\n");
+			printf(" 1おひつじ座\n");
+			printf(" 2おうし座\n");
+			printf(" 3ふたご座\n");
+			printf(" 4かに座\n");
+			printf(" 5しし座\n");
+			printf(" 6おとめ座\n");
+			printf(" 7てんびん座\n");
+			printf(" 8さそり座\n");
+			printf(" 9いて座\n");
+			printf(" 10やぎ座\n");
+			printf(" 11みずがめ座\n");
+			printf(" 12うお座\n");
+			
+			for( ; ; ){
+				printf("星座を数値で選択してください>>>");
+				scanf("%d", &sign);
+				if(0 <= sign && sign <= 12){
+					break;
+				} else {
+					printf("%d という数値の星座は存在しません\n", sign);
+					printf("再度入力してください\n");
+				}
+			}
+
+			time_t times = time(NULL);
+			struct tm *timeinfo = gmtime(&times);
+			result((unsigned int)(timeinfo->tm_year+timeinfo->tm_mon+timeinfo->tm_mday+sign));
 	return 0;
 }
