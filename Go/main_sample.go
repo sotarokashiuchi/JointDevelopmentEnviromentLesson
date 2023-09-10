@@ -13,10 +13,14 @@ func getSoulNumber(number int) (soulNumber int) {
 	for i := 0; i < 8; i++ {
 		soulNumber += number % 10
 		number = number / 10
-		if soulNumber >= 10 {
-			soulNumber = soulNumber%10 + (soulNumber%100)/10
-		}
+	}
 
+	if soulNumber%10 == soulNumber/10 {
+		return soulNumber
+	}
+
+	for soulNumber/10 > 0 {
+		soulNumber = soulNumber%10 + soulNumber/10
 	}
 	return soulNumber
 }
