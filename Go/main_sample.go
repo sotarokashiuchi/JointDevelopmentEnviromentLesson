@@ -3,7 +3,9 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println(getSoulNumber(20060416))
+	var inputNumber int
+	inputNumber = input()
+	fmt.Println(getSoulNumber(inputNumber))
 }
 
 func getSoulNumber(number int) (soulNumber int) {
@@ -16,4 +18,11 @@ func getSoulNumber(number int) (soulNumber int) {
 
 	}
 	return soulNumber
+}
+
+func input() int {
+	var inputNumber int
+	fmt.Println("数値を入力してください")
+	fmt.Scan(&inputNumber)
+	return inputNumber
 }
