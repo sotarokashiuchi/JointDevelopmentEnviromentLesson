@@ -3,9 +3,10 @@ package main
 import "fmt"
 
 func main() {
-	var inputNumber int
-	inputNumber = input()
-	fmt.Println(getSoulNumber(inputNumber))
+	var soulNumber int
+	fmt.Println("ソウルナンバー占い！！")
+	soulNumber = getSoulNumber(input())
+	getResult(soulNumber)
 }
 
 func getSoulNumber(number int) (soulNumber int) {
