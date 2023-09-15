@@ -17,7 +17,7 @@
 - 1つ以上のプログラミング言語を学んだことがある人
 - プログラミング言語に触れたことがある人
 
-## 講義の資料(現在非公開中イベント終了後公開予定)
+## 講義の資料(現在非公開中)
 - [事前課題スライド](https://docs.google.com/presentation/d/1u-R5fHSZqpYPgAYNZe-u7vsfAjGgs0894JbdBXE4OtM/edit?usp=sharing)
 - [講義スライド](https://docs.google.com/presentation/d/1kjnTv0-bfuDVGbsF1iJlLgdbs4CAkFFmbFzFwn0Fooc/edit?usp=sharing)
 - [ハンズオン用GitHub](https://github.com/sotarokashiuchi/JointDevelopmentEnviromentLesson-BasedCode)
