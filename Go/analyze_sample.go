@@ -23,7 +23,7 @@ func main () {
 		isPrimeNumber(inputNumber[0])
 		isPerfectNumber(inputNumber[0])
 	case 2:
-		isAmicableNmubers(inputNumber[0], inputNumber[1])
+		isAmicableNumbers(inputNumber[0], inputNumber[1])
 
 	}
 }
@@ -47,43 +47,35 @@ func isPerfectNumber(number int) {
 		return
 	}
 
-	var sum int
-	for i:=1; i<number; i++ {
-		if number%i == 0{
-			sum += i
-		}
-	}
-	if sum == number {
+	if divideTotal(number) == number {
 		fmt.Println(number, "は完全数です")
 	}
 	return
 }
 
-func isAmicableNmubers(x, y int) {
+func isAmicableNumbers(x, y int) {
 	if x <= 1 || y<=1{
 		return
 	}
 
-	var sum int
-	for i:=1; i<x; i++ {
-		if x%i == 0{
-			sum += i
-		}
-	}
-	if sum != y {
+	if divideTotal(x) != y{
 		return
 	}
 
-	sum = 0
-	for i:=1; i<y; i++ {
-		if y%i == 0{
-			sum += i
-		}
-	}
-	if sum != x {
+	if divideTotal(y) != x {
 		return
 	}
 	fmt.Println(x, y, "は友愛数(親和数)")
 	return
 }
 
+func divideTotal(number int) int {
+	var sum int
+	for i:=1; i<number; i++ {
+		if number%i == 0{
+			sum += i
+		}
+	}
+	return sum
+}
+	
