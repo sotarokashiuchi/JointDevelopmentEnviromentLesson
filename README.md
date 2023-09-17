@@ -18,6 +18,6 @@
 - プログラミング言語に触れたことがある人
 
 ## 講義の資料
-- [事前課題スライド](./LectureMaterials.pdf)
-- [講義スライド](./LectureMaterials_Pre-challenge.pdf)
+- [事前課題スライド](./LectureMaterials_Pre-challenge.pdf)
+- [講義スライド](./LectureMaterials.pdf)
 - [ハンズオン用GitHub](https://github.com/sotarokashiuchi/JointDevelopmentEnviromentLesson-BasedCodeForGolang)
