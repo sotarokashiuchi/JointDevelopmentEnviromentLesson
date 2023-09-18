@@ -20,7 +20,7 @@
 ## 講義の資料
 - [事前課題スライド](./LectureMaterials_Pre-challenge.pdf)
 - [講義スライド](./LectureMaterials.pdf)
-- [ハンズオン用GitHub](https://github.com/sotarokashiuchi/JointDevelopmentEnviromentLesson-BasedCodeForGolang)
+- [ハンズオン用GitHub](https://github.com/sotarokashiuchi/JDEL-HunsOn-Golang)
 
 ## 講義の時間配分
 |所要時間|モデル時間配分|内容|
@@ -35,3 +35,23 @@
 |210分間|13:30 ~ 17:00  |GitHub講座|
 |10分間|17:00 ~ 17:10   |共同開発まとめ|
 |10分間|17:10 ~ 17:20   |(サークル紹介 & 記念撮影)|
+
+## アーカイブ
+- [2023/09/16:リハーサル](https://github.com/sotarokashiuchi/JointDevelopmentEnviromentLesson-BasedCodeForGolang)
+
+## 講義の準備方法
+1. [ハンズオン用GitHub](https://github.com/sotarokashiuchi/JDEL-HunsOn-Golang)から新しいRepositoryを作成
+1. RepositoryのSettingsを変更する(以下のチェック項目を有効にすることを推奨)
+    1. [General]->[Features]->[Issues]
+    1. [General]->[Features]->[Preserve this repository]
+    1. [General]->[Features]->[Projects]
+    1. [General]->[Pull Requests]->[Allow  merge commits]
+    1. [General]->[Pull Requests]->[Allo auto-merge] (レビュアーが足りないときなどは許可してもよい)
+    1. [General]->[Pull Requests]->[Automatically delete head branches]
+    1. [Branches]->[Branch protection rule]->[Require a pul request before merging]
+    1. [Branches]->[Branch protection rule]->[Require a pul request before merging]->[Rquire approvals]
+    1. [Branches]->[Branch protection rule]->[Require a pul request before merging]->[Dismiss state pull request approvals when new commits are pushed]
+    1. [Branches]->[Branch protection rule]->[Require status checks to pass before merging]
+    1. [Branches]->[Branch protection rule]->[Do not allow bypassing the above settings] (管理者も受講生と同じ権限にしたい場合、有効にする)
+1. [Collaborators]->[Add people]から受講生のGitHubアカウントを追加する
+
