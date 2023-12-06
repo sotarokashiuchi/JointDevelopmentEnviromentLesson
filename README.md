@@ -55,3 +55,5 @@
     1. [Branches]->[Branch protection rule]->[Do not allow bypassing the above settings] (管理者も受講生と同じ権限にしたい場合、有効にする)
 1. [Collaborators]->[Add people]から受講生のGitHubアカウントを追加する
 
+## アンケート
+[こちら](https://forms.gle/ArHWYLq2scbswyLs5)からアンケートに答えてください。
