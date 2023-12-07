@@ -37,7 +37,8 @@
 |10分間|17:10 ~ 17:20   |(サークル紹介 & 記念撮影)|
 
 ## アーカイブ
-- [2023/09/16:リハーサル](https://github.com/sotarokashiuchi/JointDevelopmentEnviromentLesson-BasedCodeForGolang)
+- [2023/09/16:リハーサル](https://github.com/sotarokashiuchi/JDEL-HunsOn-20230916)
+- [2023/12:07:ゆめくじら勉強会(コンピュータ部＆知人向け)](https://github.com/sotarokashiuchi/JDEL-HunsOn-20231207)
 
 ## 講義の準備方法
 1. [ハンズオン用GitHub](https://github.com/sotarokashiuchi/JDEL-HunsOn-Golang)から新しいRepositoryを作成
