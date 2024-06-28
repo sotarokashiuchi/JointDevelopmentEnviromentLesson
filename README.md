@@ -59,19 +59,15 @@
 
 ## 講義の準備方法
 1. [ハンズオン用GitHub](https://github.com/sotarokashiuchi/JDEL-HunsOn-Golang)から新しいRepositoryを作成
-1. RepositoryのSettingsを変更する(以下のチェック項目を有効にすることを推奨)
-    1. [General]->[Features]->[Issues]
-    1. [General]->[Features]->[Preserve this repository]
-    1. [General]->[Features]->[Projects]
-    1. [General]->[Pull Requests]->[Allow  merge commits]
-    1. [General]->[Pull Requests]->[Allo auto-merge] (レビュアーが足りないときなどは許可してもよい)
-    1. [General]->[Pull Requests]->[Automatically delete head branches]
-    1. [Branches]->[Branch protection rule]->[Require a pul request before merging]
-    1. [Branches]->[Branch protection rule]->[Require a pul request before merging]->[Rquire approvals]
-    1. [Branches]->[Branch protection rule]->[Require a pul request before merging]->[Dismiss state pull request approvals when new commits are pushed]
-    1. [Branches]->[Branch protection rule]->[Require status checks to pass before merging]
-    1. [Branches]->[Branch protection rule]->[Do not allow bypassing the above settings] (管理者も受講生と同じ権限にしたい場合、有効にする)
-1. [Collaborators]->[Add people]から受講生のGitHubアカウントを追加する
+2. GitHub Actionsから「create template issue」を手動実行
+3. RepositoryのSettingsのRulesの「GitHub Flow」をActiveに変更
+4. RepositoryのSettingsのGeneralを変更する(以下のチェック項目を有効にすることを推奨)
+    1. [Features]->[Issues]
+    2. [Features]->[Preserve this repository]
+    3. [Pull Requests]->[Allow  merge commits]
+    4. [Pull Requests]->[Allo auto-merge] (レビュアーが足りないときなどは許可してもよい)
+    5. [Pull Requests]->[Automatically delete head branches]
+5. [Collaborators]->[Add people]から受講生のGitHubアカウントを追加する
 
 ## アンケート
 [こちら](https://forms.gle/ArHWYLq2scbswyLs5)からアンケートに答えてください。
