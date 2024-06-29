@@ -56,6 +56,8 @@
 ## アーカイブ
 - [2023/09/16:リハーサル](https://github.com/sotarokashiuchi/JDEL-HunsOn-20230916)
 - [2023/12:07:ゆめくじら勉強会(コンピュータ部＆知人向け)](https://github.com/sotarokashiuchi/JDEL-HunsOn-20231207)
+- [2024/06/29:IT企業直伝プログラミングスタートアップ講座A)](https://github.com/sotarokashiuchi/JDEL-HunsOn-20240629-A)
+- [2024/06/29:IT企業直伝プログラミングスタートアップ講座B)](https://github.com/sotarokashiuchi/JDEL-HunsOn-20240629-B)
 
 ## 講義の準備方法
 1. [ハンズオン用GitHub](https://github.com/sotarokashiuchi/JDEL-HunsOn-Golang)から新しいRepositoryを作成
